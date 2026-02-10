@@ -1,0 +1,13 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🐞 Report a bug
+    url: https://github.com/AlgoLinkAI/community/issues/new
+    about: Something is not working as expected
+
+  - name: 💡 Feature requests & ideas
+    url: https://github.com/AlgoLinkAI/community/discussions/categories/ideas
+    about: Suggest features or improvements
+
+  - name: ❓ Questions & usage help
+    url: https://github.com/AlgoLinkAI/community/discussions/categories/q-a
+    about: Ask questions and get help
