@@ -1,0 +1,65 @@
+name: 🐞 Bug report
+description: Something is not working as expected
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug!
+        Please provide as much detail as possible so we can understand and reproduce the issue.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the issue and what you expected to happen instead.
+      placeholder: |
+        Example:
+        I sent a request to /v1/chat/completions and received an unexpected error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Send request to /v1/chat/completions
+        2. Use model X
+        3. Receive error Y
+    validations:
+      required: true
+
+  - type: textarea
+    id: request
+    attributes:
+      label: Request / payload
+      description: Paste the request body or relevant code (remove secrets).
+      render: json
+
+  - type: textarea
+    id: response
+    attributes:
+      label: Response / error
+      description: Paste the response or error message you received.
+      render: json
+
+  - type: input
+    id: model
+    attributes:
+      label: Model / provider
+      placeholder: e.g. gpt-4.1, claude, mistral
+
+  - type: input
+    id: sdk
+    attributes:
+      label: SDK / client
+      placeholder: e.g. OpenAI Python SDK, curl, custom client
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Anything else that might be relevant?
